@@ -8,7 +8,7 @@ Aplicação Web Full Stack utilizando `Nest`, `React` e `TypeScript`.
 
 <h2>📑 Sumário</h2>
 
-- [Lista de cursos realizados](#curso)
+- [Curso realizado](#curso)
 - [Tecnologias utilizadas](#tech)
 
 ---
