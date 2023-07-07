@@ -19,12 +19,12 @@ const animals = [
 // animals.forEach((animal) => console.log(animal));
 
 /* Somando todas as idades */
-let ageSum = 0;
+// let ageSum = 0;
 
-animals.forEach((animal) => {
-    ageSum += animal.age;
-});
+// animals.forEach((animal) => {
+//     ageSum += animal.age;
+// });
 
-console.log("ageSum: ", ageSum);
+// console.log("ageSum: ", ageSum);
 
 /* ESTOU EM: seção 2 - aula 6 - 3:06 min */
