@@ -11,20 +11,20 @@ const animals = [
 ];
 
 /* Exebindo todos os dados */
-// for (let i = 0; i < animals.length; i++) {
-//     console.log(animals[i]);
-// }
+for (let i = 0; i < animals.length; i++) {
+    console.log(animals[i]);
+}
 
 /* Exebindo os dados com forEach */
-// animals.forEach((animal) => console.log(animal));
+animals.forEach((animal) => console.log(animal));
 
 /* Somando todas as idades */
-// let ageSum = 0;
+let ageSum = 0;
 
-// animals.forEach((animal) => {
-//     ageSum += animal.age;
-// });
+const sumAges = (animal) => {
+    ageSum += animal.age;
+};
 
-// console.log("ageSum: ", ageSum);
+animals.forEach(sumAges);
 
-/* ESTOU EM: seção 2 - aula 6 - 3:06 min */
+console.log("ageSum: ", ageSum);
