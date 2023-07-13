@@ -47,8 +47,24 @@ const musicalInstruments = [
 ];
 
 /* Buscando o saxofone */
-// const searchSax = musicalInstruments.find((instrument) => instrument.name === "Saxofone");
+const searchSax = musicalInstruments.find((instrument) => instrument.name === "Saxofone");
 
-// console.log("searchSax: ", searchSax);
+console.log("searchSax: ", searchSax);
 
-/* ESTOU EM: Seção 2 - aula 8 - 1:18 min */
+/* Buscando o instrumento de acordo com o nome do inventor */
+const searchInventor = (instrument) => {
+  return instrument.inventor === "Antonio de Torres";
+}
+
+const inventor = musicalInstruments.find(searchInventor);
+
+console.log("inventor: ", inventor);
+
+/* Buscando um instrumento pelo emoji */
+const searchInstrumentByEmoji = (instrument) => {
+  return instrument.emoji === "🥁";
+}
+
+const searchBaterry = musicalInstruments.find(searchInstrumentByEmoji);
+
+console.log("searchBaterry: ", searchBaterry);
