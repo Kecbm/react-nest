@@ -36,16 +36,26 @@ const dogBreeds = [
     }
 ];
 
-/* Alterando a estrutura do array original */
-// const breedNormalized = dogBreeds.reduce((acc, dog) => {
-//     return {
-//         ...acc,
-//         [dog.breed]: {
-//             ...dog
-//         }
-//     }
-// }, {});
+/* Convertendo um array para um objeto */
+const breedObj = dogBreeds.reduce((acc, dog) => {
+    return {
+        ...acc,
+        [dog.breed]: {
+            ...dog
+        }
+    }
+}, {});
 
-// console.log("breedNormalized: ", breedNormalized);
+console.log("breedObj: ", breedObj);
 
-// ESTOU EM: seção 2 - aula 9 - 6:20 min
+/* Acessando a idade do Pinscher */
+console.log("Pinscher age: ", breedObj.Pinscher.age);
+
+/* Montando um array que armazena uma string específica para cada dog */
+const dogInfos = dogBreeds.reduce((acc, dog) => {
+  acc.push(`${dog.breed} - ${dog.origin}`)
+
+  return acc;
+}, []);
+
+console.log("dogInfos: ", dogInfos);
