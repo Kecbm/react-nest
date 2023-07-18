@@ -36,4 +36,20 @@ const greatestVictoriesHamilton = [
     }
 ];
 
-// ESTOU EM: Seção 2 - Aula 10
+/* Ordenando os objetos pelo ano, de forma decrescente */
+const yearDesc = greatestVictoriesHamilton.sort((a, b) => {
+  if (a.year > b.year) {
+    return -1;
+  }
+});
+
+console.log("yearDesc: ", yearDesc);
+
+/* Ordenando pelo nome dos paises, em ordem alfabética */
+const locationAsc = greatestVictoriesHamilton.sort((a, b) => {
+  if (a.location.toLocaleLowerCase() < b.location.toLocaleLowerCase()) {
+    return -1;
+  }
+});
+
+console.log("locationAsc: ", locationAsc);
