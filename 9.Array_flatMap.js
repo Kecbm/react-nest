@@ -1,56 +1,72 @@
-const bestSellingBooks = [
-    {
-      title: "Dom Quixote",
-      author: "Miguel de Cervantes",
-      year: 1605,
-      emoji: "🎠"
-    },
-    {
-      title: "Um Conto de Duas Cidades",
-      author: "Charles Dickens",
-      year: 1859,
-      emoji: "🗺️"
-    },
-    {
-      title: "O Senhor dos Anéis",
-      author: "J.R.R. Tolkien",
-      year: 1954,
-      emoji: "💍"
-    },
-    {
-      title: "O Pequeno Príncipe",
-      author: "Antoine de Saint-Exupéry",
-      year: 1943,
-      emoji: "🤴🏾"
-    },
-    {
-      title: "Harry Potter e a Pedra Filosofal",
-      author: "J.K. Rowling",
-      year: 1997,
-      emoji: "🧙🏾‍♂️"
-    },
-    {
-      title: "O Alquimista",
-      author: "Paulo Coelho",
-      year: 1988,
-      emoji: "🔮"
-    },
-    {
-      title: "Cem Anos de Solidão",
-      author: "Gabriel García Márquez",
-      year: 1967,
-      emoji: "⌛"
-    },
-    {
-      title: "O Código Da Vinci",
-      author: "Dan Brown",
-      year: 2003,
-      emoji: "🖼️"
-    },
-    {
-      title: "O Apanhador no Campo de Centeio",
-      author: "J.D. Salinger",
-      year: 1951,
-      emoji: "🌾"
-    }
+const fresnoSongs = [
+  {
+    title: 'Eu Sei',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '😎',
+    streams: 10000000,
+  },
+  {
+    title: 'Alguém que te faz sorrir',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '😁',
+    streams: 9500000,
+  },
+  {
+    title: 'Infância',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '👶',
+    streams: 9000000,
+  },
+  {
+    title: 'Stonehenge',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '🪨',
+    streams: 8500000,
+  },
+  {
+    title: 'Desde Quando Você Se Foi',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '🛣️',
+    streams: 8000000,
+  },
+  {
+    title: 'Quebre As Correntes',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '⛓️',
+    streams: 7500000,
+  },
+  {
+    title: 'Die Lüge',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '🎭',
+    streams: 7200000,
+  },
+  {
+    title: 'Onde Está',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '💔',
+    streams: 7000000,
+  },
+  {
+    title: 'Manifesto',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '📖',
+    streams: 6800000,
+  },
+  {
+    title: 'Sexto Andar',
+    musicians: ['Lucas Silveira', 'Vavo', 'Rodrigo Tavares'],
+    emoji: '🏢',
+    streams: 6500000,
+  },
 ];
+
+/* Exebindo um array do array de músicos */
+const fresnoBand = fresnoSongs.map((song) => song.musicians);
+
+console.log("fresnoBand: ", fresnoBand);
+
+/* Exebindo o array de musicos como uma string em um novo array */
+const nameFresnoMusicians = fresnoSongs.flatMap((song) => song.musicians);
+
+console.log("nameFresnoMusicians: ", nameFresnoMusicians);
